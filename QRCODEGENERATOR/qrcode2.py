@@ -1,5 +1,5 @@
 import qrcode
-from PIL import Image  # 'Image' should be capitalized, not 'image'
+from PIL import Image  
 
 # Initialize the QRCode object with settings
 qr = qrcode.QRCode(
@@ -14,5 +14,5 @@ qr.add_data("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 qr.make(fit=True)
 
 # Generate the QR code image
-img = qr.make_image(fill_color="black", back_color="white")  # use 'img' instead of 'imag'
+img = qr.make_image(fill_color="black", back_color="white") 
 img.save("QRCODE.png")
